@@ -11,7 +11,8 @@ Template.home.events({
 });
 
 Template.home.events({
-  'click .header_text': function () {
+  'click .new-pun': function (e) {
+    e.preventDefault();
   	var array = Puns.find().fetch();
     var total = Puns.find().count();
     var pun_url = '';

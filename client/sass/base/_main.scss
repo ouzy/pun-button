@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header_text {
 	text-align: center;
-	cursor: pointer;
+	margin-bottom: 50px;
 }
 
 .pun {
@@ -45,26 +45,43 @@ h1, h2, h3, h4, h5, h6 {
 }
 .display {
 	text-align: center;
+	margin-top: 100px;
 	max-width: 600px;
 	float: none;
 	margin: 0 auto;
 }
 
-.tweet-button {
-	background-color: $twitter_blue;
+.button {
 	display: block;
 	padding: 30px;
 	text-decoration: none;
-	color: white;
+	width: 48%;
 	&:hover {
 		text-decoration: none;
-		background-color: darken($twitter_blue, 5%);
 	}
 	.twitter-logo {
-		display: none;
+		margin: 0 auto;
 		width: 40px;
 		height: auto;
-		float: right;
 		vertical-align: middle;
+	}
+}
+
+.new-pun {
+	float: left;
+	color: $color2;
+	border: 1px solid $color2;
+	padding-left: 70px;
+	.twitter-logo { 
+		display: inline;
+		visibility: hidden;
+	}
+}
+.tweet-button {
+	float: right;
+	background-color: $twitter_blue;
+	color: white;
+	&:hover {
+		background-color: darken($twitter_blue, 5%);
 	}
 }
