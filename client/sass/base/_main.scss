@@ -1,0 +1,70 @@
+/* MAIN AREAS */
+
+$color1: #52414c;
+$color2: #fe5f55;
+$color3: #596157;
+$color4: #5b8c5a;
+$color5: #cfd186;
+$twitter_blue: #4099FF;
+$header_font: "kepler-std-extended-display";
+$body_font: "ff-basic-gothic-web-pro";
+
+body {
+	font-size: 16px;
+	background-color: $color1;
+	color: $color2;
+	font-family: $body_font;
+	overflow-x:hidden;
+}
+
+h1, h2, h3, h4 {
+	font-family: $header_font;
+}
+
+h1 { font-size: 4em}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+}
+
+.content {
+	padding-top: 5%;
+}
+.header_text {
+	text-align: center;
+	cursor: pointer;
+}
+
+.pun {
+	height: 100px;
+}
+.display {
+	text-align: center;
+	max-width: 600px;
+	float: none;
+	margin: 0 auto;
+}
+
+.tweet-button {
+	background-color: $twitter_blue;
+	display: block;
+	padding: 30px;
+	text-decoration: none;
+	color: white;
+	&:hover {
+		text-decoration: none;
+		background-color: darken($twitter_blue, 5%);
+	}
+	.twitter-logo {
+		display: none;
+		width: 40px;
+		height: auto;
+		float: right;
+		vertical-align: middle;
+	}
+}
